@@ -2,7 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import {Link} from "../../../../components/Link";
 
-export type WorksStatusType = "all" | "landing" | "react" | "spa"
+// export type WorksStatusType = "all" | "landing" | "react" | "spa"
+export type WorksStatusType = "web" | "backend"
 
 type WorkMenuPropsType = {
     worksItems: Array<{status: WorksStatusType, title: string}>
@@ -32,10 +33,12 @@ const StyledWorkMenu = styled.nav`
       width: 100%;
       //outline: 1px solid red;
       margin: 0 auto 40px;
-    }    
+    }
 `
 const ListItem = styled.li`
-   
+   //button {
+   //  font-size: 16px;
+   //}
 `
 
 

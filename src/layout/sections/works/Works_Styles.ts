@@ -32,6 +32,7 @@ const Image = styled.img`
     width: 100%;
     height: 260px;
     object-fit: cover;
+  border-radius: 10%;
 `
 
 const ImageWrapper = styled.div`
@@ -97,6 +98,8 @@ const Title = styled.h3`
 const Description = styled.div`
     padding: 20px 20px;
 `
+const WorkLink = styled.a`
+`
 export const S = {
     Works,
     Work,
@@ -105,4 +108,5 @@ export const S = {
     Text,
     Title,
     Description,
+    WorkLink
 }

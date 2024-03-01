@@ -3,92 +3,140 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {WorkMenu, WorksStatusType} from "./workMenu/WorkMenu";
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Work} from "./work/Work";
-import leftPhoto from './../../../assets/img/leftFoto_1.webp'
-import rigthPhoto from './../../../assets/img/rigthFoto_1.webp'
+import devImg from './../../../assets/img/dev.webp'
+import devImg2 from './../../../assets/img/dev2.webp'
+import porft from './../../../assets/img/portf.webp'
+import rightImg from './../../../assets/img/rigthFoto_1.webp'
 import {Container} from "../../../components/Container";
 import {S} from './Works_Styles'
 import {AnimatePresence, motion} from "framer-motion"
 
 
-// const worksItems = ["All","landing page","React","spa"]
+// const worksItems: Array<{status: WorksStatusType, title: string}> = [
+//     {
+//         title: "All",
+//         status: "all"
+//     },
+//     {
+//         title: "landing page",
+//         status: "landing"
+//     },
+//     {
+//         title: "React",
+//         status: "react"
+//     },
+//     {
+//         title: "spa",
+//         status: "spa"
+//     },
+//
+// ]
+
+// const worksData = [
+//     {
+//         title: "Social Network",
+//         src: leftPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+//         type: "spa",
+//         id: 1,
+//         href: "https://vk.com/feed",
+//     },
+//     {
+//         title: "Timer",
+//         src: rigthPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+//         type: "react",
+//         id: 2,
+//         href: "https://www.timeanddate.com/timer/",
+//     },
+//     {
+//         title: "Social Network",
+//         src: leftPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+//         type: "spa",
+//         id: 3,
+//         href: "https://vk.com/feed",
+//     },
+//     {
+//         title: "Timer",
+//         src: rigthPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+//         type: "react",
+//         id: 4,
+//         href: "https://www.timeanddate.com/timer/",
+//     },
+//     {
+//         title: "Social Network",
+//         src: leftPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+//         type: "spa",
+//         id: 5,
+//         href: "https://vk.com/feed",
+//     },
+//     {
+//         title: "Timer",
+//         src: rigthPhoto,
+//         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+//         type: "react",
+//         id: 6,
+//         href: "https://www.timeanddate.com/timer/",
+//     },
+// ]
 
 const worksItems: Array<{status: WorksStatusType, title: string}> = [
     {
-        title: "All",
-        status: "all"
+        title: "Web",
+        status: "web"
     },
     {
-        title: "landing page",
-        status: "landing"
+        title: "Backend",
+        status: "backend"
     },
-    {
-        title: "React",
-        status: "react"
-    },
-    {
-        title: "spa",
-        status: "spa"
-    },
-
 ]
-
 const worksData = [
     {
-        title: "Social Network",
-        src: leftPhoto,
+        title: "My Porfolio",
+        src: porft,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa",
+        type: "web",
         id: 1,
+        href: "https://github.com/Fabius01k/My-react-portfolio",
     },
     {
         title: "Timer",
-        src: rigthPhoto,
+        src: rightImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
+        type: "web",
         id: 2,
+        href: "https://www.timeanddate.com/timer/",
     },
     {
-        title: "Social Network",
-        src: leftPhoto,
+        title: "Express + MondoDb Api",
+        src: devImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa",
+        type: "backend",
         id: 3,
+        href: "https://github.com/Fabius01k/project",
     },
     {
-        title: "Timer",
-        src: rigthPhoto,
+        title: "NestJs + TypeORM Api",
+        src: devImg2,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
+        type: "backend",
         id: 4,
-    },
-    {
-        title: "Social Network",
-        src: leftPhoto,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa",
-        id: 5,
-    },
-    {
-        title: "Timer",
-        src: rigthPhoto,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
-        id: 6,
+        href: "https://github.com/Fabius01k/projectNest",
     },
 ]
 
 export const Works:React.FC = () => {
-    const [currentFilterStatus, setCurrentFilterStatus] = useState("all")
+    const [currentFilterStatus, setCurrentFilterStatus] = useState("web")
     let filteredWorks = worksData
 
-    if(currentFilterStatus === "landing") {
-        filteredWorks = worksData.filter(work => work.type === "landing")
+    if(currentFilterStatus === "web") {
+        filteredWorks = worksData.filter(work => work.type === "web")
     }
-    if(currentFilterStatus === "react") {
-        filteredWorks = worksData.filter(work => work.type === "react")
-    }
-    if(currentFilterStatus === "spa") {
-        filteredWorks = worksData.filter(work => work.type === "spa")
+    if(currentFilterStatus === "backend") {
+        filteredWorks = worksData.filter(work => work.type === "backend")
     }
 
     function changeFilterStatus(value: WorksStatusType) {
@@ -118,7 +166,8 @@ export const Works:React.FC = () => {
                                 <Work title={w.title}
                                       imageSrc={w.src}
                                       text={w.text}
-                                      key={w.id}/>
+                                      key={w.id}
+                                      href={w.href}/>
                             </motion.div>
                         )
                         })}

@@ -18,7 +18,7 @@ export const Main: React.FC = () => {
                             <p>A Web Developer.</p>
                             <Typewriter
                                 options={{
-                                    strings: ['A Web Developer.', 'A Backend Developer'],
+                                    strings: ['A Web Developer.', 'A Backend Developer.'],
                                     autoStart: true,
                                     loop: true,
                                     delay: 150,
