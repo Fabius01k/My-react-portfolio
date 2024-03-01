@@ -38,6 +38,7 @@ export const Footer = () => {
                         })}
 
                 </S.SocialList>
+
                 <S.Copyright>
                     © 2024 Pavel Murashkin, All Rights Reserved.
                 </S.Copyright>
