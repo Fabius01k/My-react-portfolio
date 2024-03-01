@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/My-react-portfolio/static/css/main.350906f8.css",
+    "main.js": "/My-react-portfolio/static/js/main.fef69966.js",
+    "static/js/787.25eaef86.chunk.js": "/My-react-portfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/dev.webp": "/My-react-portfolio/static/media/dev.3a35a1c9647d8c3771af.webp",
+    "static/media/mainFoto_1.webp": "/My-react-portfolio/static/media/mainFoto_1.18f58814f1083b42766b.webp",
+    "static/media/dev2.webp": "/My-react-portfolio/static/media/dev2.742de5b84153e1a39937.webp",
+    "static/media/portf.webp": "/My-react-portfolio/static/media/portf.51e491e655b7fa5a95b7.webp",
+    "static/media/rigthFoto_1.webp": "/My-react-portfolio/static/media/rigthFoto_1.e294a9180f3031d1b313.webp",
+    "static/media/icons-sprite.svg": "/My-react-portfolio/static/media/icons-sprite.b0cfa67e3f5eafbaa3709dc21190ff6b.svg",
+    "index.html": "/My-react-portfolio/index.html",
+    "main.350906f8.css.map": "/My-react-portfolio/static/css/main.350906f8.css.map",
+    "main.fef69966.js.map": "/My-react-portfolio/static/js/main.fef69966.js.map",
+    "787.25eaef86.chunk.js.map": "/My-react-portfolio/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.350906f8.css",
+    "static/js/main.fef69966.js"
+  ]
+}
