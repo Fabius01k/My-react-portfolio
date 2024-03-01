@@ -10,6 +10,9 @@ export const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
   }  
   
+  
+  
+  
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,6 +31,7 @@ export const GlobalStyled = createGlobalStyle`
     color: ${theme.colors.font};
     cursor: pointer;
   }
+  
   
   ul {
     list-style: none;
